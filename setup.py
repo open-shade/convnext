@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'convnext_ros2'
+package_name = 'convnext'
 
 setup(
     name=package_name,
@@ -31,7 +31,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'convnext_ros2 = convnext_ros2.convnext_ros2:main'
+            'convnext = convnext.convnext:main'
         ],
     },
 )
