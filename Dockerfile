@@ -29,7 +29,7 @@ COPY . ./src/convnext
 
 RUN pip3 install ./src/convnext && \
     : "Install the model" && \
-    python3 -c "from transformers import AutoFeatureExtractor; AutoFeatureExtractor.from_pretrained('${MODEL_NAME}')" && \
+    python3 -c "from transformers import AutoFeatureExtractor, ConvNextForImageClassification; AutoFeatureExtractor.from_pretrained('${MODEL_NAME}'); ConvNextForImageClassification.from_pretrained('${MODEL_NAME}')" && \
     colcon build
 
 ENTRYPOINT ["/home/shade/shade_ws/start.sh"]
