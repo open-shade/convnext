@@ -3,9 +3,9 @@
 <package format="3">
   <name>convnext</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="lidar@todo.todo">lidar</maintainer>
-  <license>TODO: License declaration</license>
+  <description>The ConvNet gradually "modernizes" a standard ResNet toward the design of a Vision Transformer, and discovers several key components that contribute to the performance difference along the way. It is made completely out of ConvNets instead of transformers or any other operation, achieving greater efficiency via convolutions instead of attention.</description>
+  <maintainer email="support@shaderobotics.com">Shade Robotics</maintainer>
+  <license>GPL-3.0</license>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
